@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+#container {
+    text-align: center;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+#controls {
+    margin-bottom: 10px;
+}
+
+#game-container {
+    display: grid;
+    gap: 2px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #d1d1d1;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cell.revealed {
+    background-color: #f0f0f0;
+    cursor: default;
+}
+
+.cell.mine {
+    background-color: #ff4d4d;
+}
+
+.cell.flag {
+    background-color: #ffe066;
+}
+
+#info {
+    margin-top: 10px;
+}
+
+#ranking {
+    margin-top: 20px;
+    text-align: left;
+}
